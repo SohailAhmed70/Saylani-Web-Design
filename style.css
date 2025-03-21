@@ -98,7 +98,7 @@ display: flex;
 
 justify-content: center;
 
-min-width: 100%;
+max-width: 100%;
 }
 .gen > input{
 font-size: 150%;
@@ -589,7 +589,7 @@ background: none;
 border: 2px solid white;
 outline: none;
 }
-.bt{
+/* .bt{
 position: absolute;
 top: 130%;
 right: 0px;
@@ -601,24 +601,24 @@ text-align: center;
 text-decoration: none;
 
 font-size: 16px;
-}
+} */
 @media only screen and (max-width: 432px){
     .input12 input{
         padding: 10px 50px;
        
     }
-    .bt{
+    /* .bt{
  background-color: rgb(180, 184, 185);
  padding: 10px 130px;
-    }
+    } */
 }
-@media only screen and (max-width: 432px){
+/* @media only screen and (max-width: 432px){
    .bt{
     background-color: rgb(180, 184, 185);
     padding: 10px 100px;
    margin-right: 15px;
    }
-    }
+    } */
 
 .main13{
     margin-top: 30px;
