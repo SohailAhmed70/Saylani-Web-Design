@@ -2,6 +2,7 @@
 padding: 0%;
 margin: 0%;
 font-family: poppins;
+box-sizing: border-box;
 
 }
 .head> .p1{
@@ -55,53 +56,62 @@ list-style-type: none;
 .main{
     margin-top: 30px;
 display: flex;
-justify-content: center, space-around;
+flex-wrap: wrap;
+justify-content: space-around;
+
+min-height: 400px;
+width: 100%;
 }
 .m1{
-margin-left: 20px;
+
     font-size: 30px;
-flex: 1;
+max-width: 700px;
 font-family: poppins;
 }
 .m2{
-background-image: url("./saylani-home-imgs/38.png");
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
-flex: 1;
-height: 400px;
-max-width: 50%;
+    
 
-margin-left: 50px;
+min-height: 250px;
+max-width: 400px;
+
+
+}
+.be{
+    
+    width: 100%;
+    text-align: center;
+  
 }
 
-
 .main2{
-    height: 310px ;
+    min-height: 310px ;
     max-width: 100%;
 background-color: rgb(240, 236, 207);
 margin-top: 50px;
-
+padding: 30px 0px;
 }
 .gen{
  
 background-color: rgb(240, 236, 207);
 display: flex;
+
+
 justify-content: center;
 
-
+min-width: 100%;
 }
 .gen > input{
 font-size: 150%;
-margin-top: 40px;
+
 }
 .gen > button{
 background-color: rgb(55, 52, 52);
 color: white;
 border: none;
-width: 68px;
+padding: 20px;
 height: 61px;
-margin-top: 42px;
+
+
 
 }
 .buttondiv{
@@ -109,6 +119,7 @@ display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
 margin-top: 30px;
+gap: 10px;
 }
 .button1{
 border-radius: 15px;
@@ -188,14 +199,19 @@ border-radius: 15px;
                 background-color: rgb(94, 238, 94);
                 color: rgb(0, 0, 0);
                 padding: 15px 32px;
-                text-align: center;
+               
                 text-decoration: none;
                 border-radius: 15px;
                 display: inline-block;
                 font-size: 16px;
            margin-top: 20px;
            color: white;
-           margin-left: 100px;
+          
+                }
+                .fbutton{
+                  
+                    display: flex;
+                    justify-content: center;
                 }
                 .f2:hover{
 
@@ -203,21 +219,19 @@ border-radius: 15px;
                 }
 
                 .main3{
-           position: relative;
+          
                   margin-top: 50px;
 display: flex;
+justify-content: center;
                    max-width: 100%;
-                    height: 550px;
+                    min-height: 400px;
                 }
-          .main3 img{
-margin-left: 100px;
-
-          }
 
 .main4{
   
     flex-wrap: wrap;
   margin-top: 30px;
+min-height: 400px;
 
 display: flex;
 
@@ -226,8 +240,9 @@ justify-content: center;
 .main4s{
 display: flex;
 width: 100%;
-height: 250px;
-
+min-height: 250px;
+gap: 15px;
+flex-wrap: wrap;
 justify-content: space-evenly;
 }
 .mains1{
@@ -279,9 +294,10 @@ width: 200px;
     .main4ss{
     display: flex;
     width: 100%;
-    height: 250px;
-
-
+    min-height: 250px;
+    gap: 15px;
+    flex-wrap: wrap;
+margin-top: 15px;
     justify-content: space-evenly;
     }
     .mainss1{
@@ -317,19 +333,20 @@ width: 200px;
     }
 
 .main5{
-
+margin-top: 20px;
 display: flex;
 align-items: center;
 justify-content: space-evenly;
 flex-wrap: wrap;
-height: 520px;
+min-height: 350px;
+gap: 25px;
 
 }
 
 .main5s{
     position: relative;
    
-border: 1px solid black;
+
 height: 250px;
 width: 350px;
 
@@ -338,24 +355,25 @@ width: 350px;
 }
 .main5ss{
  position: relative;
-    border: 1px solid black;
+ 
     height: 250px;
     width: 350px;
    
     }
    
     .main5sss{
-   align-self: flex-end;
-
+  
         position: relative;
-           border: 1px solid black;
+         
            height: 250px;
            width: 350px;
     
            }
 .main6{
-margin-top: 50px;
-margin-left: 60px;
+width: 100%;
+margin-top: 30px;
+display: flex;
+justify-content: center;
 }
     .main7{
 
@@ -400,12 +418,14 @@ gap: 20px;
 
 .main8{
 display: flex;
-justify-content: space-around;
+gap: 10px;
+flex-wrap: wrap;
+justify-content: center;
 align-items: center;
 width: 98%;
-height: 400px;
+min-height: 250px;
 border: 1px solid black;
-margin-left: 8px;
+
 background-image: url("./saylani-home-imgs/background.jpg") ;
 background-position: center;
 background-size: cover;
@@ -413,8 +433,8 @@ background-size: cover;
 }
 .main8img1{
 background-color: white;
-width: 12%;
-height: 120px;
+min-width: 12%;
+max-height: 120px;
 padding: 15px;
 text-align: center;
 border-radius: 55px;
@@ -423,7 +443,7 @@ border-radius: 55px;
 
 .main8img2{
     background-color: white;
-    width: 12%;
+    min-width: 12%;
     height: 120px;
     padding: 15px;
     text-align: center;
@@ -433,7 +453,7 @@ border-radius: 55px;
     
     .main8img3{
         background-color: white;
-        width: 12%;
+        min-width: 12%;
         height: 120px;
         padding: 15px;
         text-align: center;
@@ -443,7 +463,7 @@ border-radius: 55px;
         
         .main8img4{
             background-color: white;
-            width: 12%;
+            min-width: 12%;
             height: 120px;
             padding: 15px;
             text-align: center;
@@ -457,11 +477,11 @@ border-radius: 55px;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-height: 450px;
-width: 95%;
+min-height: 450px;
+width: 100%;
 background-color: #D3D3D3;
 margin-top: 50px;
-margin-left: 22px;
+
             }
 
             .main9img{
@@ -484,19 +504,59 @@ margin-top: 50px;
 
 
             .main10{
-                flex-direction: column;
+                display: flex;
                 flex-wrap: wrap;
-          justify-content: space-around;
-     justify-items: center;
-     margin-left: 2%;
-display: flex;
-max-width: 100%;
-height: 800px;
+         gap: 15px;
+         justify-content: center;
+     
+     
+
+width: 100%;
+min-height: 500px;
 
             }
+/* .media1{
+    border: 1px solid black;
+} */
 
-
-
+.main11{
+    width: 100%;
+    min-height: 200px;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+.main11{
+    display: flex;
+    min-height: 300px;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+   gap: 20px;
+    }
+.news1{
+    max-width: 300px;
+    min-height: 150px;
+    
+}
+.news2{
+    max-width: 300px;
+    min-height: 150px;
+    
+}
+.news3{
+    max-width: 300px;
+    min-height: 150px;
+    
+}
+.news4{
+    max-width: 300px;
+    min-height: 150px;
+    
+}
  .main12{
     justify-content: center;
     flex-wrap: wrap;
@@ -506,9 +566,10 @@ height: 800px;
  background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
- margin-left: 14px;
-width: 96%;
-height: 300px;
+
+max-width: 100%;
+min-height: 300px;
+margin-top: 50px;
             }
 
 .input12{
@@ -532,17 +593,36 @@ outline: none;
 position: absolute;
 top: 130%;
 right: 0px;
+background-color: #ffffff;
+border: none;
+color: rgb(0, 0, 0);
+padding: 15px 170px;
+text-align: center;
+text-decoration: none;
 
+font-size: 16px;
+}
+@media only screen and (max-width: 432px){
+    .input12 input{
+        padding: 10px 70px;
+       
+    }
+    .bt{
+ background-color: rgb(121, 218, 245);
+ padding: 10px 130px;
+    }
 }
 
 .main13{
     margin-top: 30px;
-border: 1px solid black;
+
 display: flex;
-justify-content: space-around;
+flex-wrap: wrap;
+justify-content: center;
 align-items: center;
+gap: 20px;
 width: 100%;
-height: 370px;
+min-height: 320px;
 background-image: url("./saylani-home-imgs/footer.jpg");
 background-repeat: no-repeat;
 background-size: cover;
@@ -552,43 +632,67 @@ background-position: center;
 .main13 ol li{
 list-style-type: none;
 
+
+width: 250px;
 }
+.main13 ol{
+    margin: 0;
+    padding: 0;
+    
+}
+
 .main13li{
+    
 color: white;
-width: 15%;
+width: 250px;
 height: 200px;
 }
 .main13li2{
     color: white;
-    width: 15%;
+   width: 250px;
 height: 200px;
+
     }
     .main13li3{
         color: white;
-        width: 20%;
+        width: 250px;
+        
 height: 200px;
-width: 15%;
+
         }
         
 
 .main13img{
-width: 20%;
+    width: 250px;
 height: 200px;
+
 }
-body{
+/* body{
     overflow-x: hidden;
   
+} */
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 460px){
+    .gen > button{
+display: none;
+
+    }
+
 }
+/* @media only screen and (max-width: 525px){
+    .news3{
+display: none;
 
-
-
-
-
-.main11{
-display: flex;
-height: 300px;
-width: 100%;
-
-justify-content: center;
-justify-content: space-around;
-}
+    }
+    .news4{
+        display: none;
+        
+            }
+} */
