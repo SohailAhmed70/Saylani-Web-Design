@@ -577,42 +577,47 @@ margin-top: 50px;
 position: absolute;
 top: 100px;
 
-
+min-height: 150px;
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center
 }
 .input12 ::placeholder{
 color: white;
-
+text-align: center;
 }
 .input12 input{
-padding: 15px 107px;
-text-align: center;
+width: 51%;
+height: 60px;
+color: white;
+
 background: none;
 border: 2px solid white;
 outline: none;
 }
-/* .bt{
-position: absolute;
-top: 130%;
-right: 0px;
+.input12 button{
+
 background-color: #ffffff;
 border: none;
 color: rgb(0, 0, 0);
-padding: 15px 170px;
-text-align: center;
+width: 51%;
+height: 50px;
+
 text-decoration: none;
 
 font-size: 16px;
-} */
-@media only screen and (max-width: 432px){
+}
+/* @media only screen and (max-width: 432px){
     .input12 input{
         padding: 5px 20px;
       
-    }
+    } */
     /* .bt{
  background-color: rgb(180, 184, 185);
  padding: 10px 130px;
     } */
-}
+
 /* @media only screen and (max-width: 432px){
    .bt{
     background-color: rgb(180, 184, 185);
